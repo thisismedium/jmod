@@ -1,1 +1,1 @@
-../lib/lang-1.0.0.js
+../lib/lang-0.0.1.js

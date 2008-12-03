@@ -1,1 +1,1 @@
-../lib/modules-1.0.0.js
+../lib/modules-0.0.5.js

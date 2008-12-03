@@ -1,1 +1,1 @@
-../lib/dist-1.0.0.js
+../lib/dist-0.0.1.js

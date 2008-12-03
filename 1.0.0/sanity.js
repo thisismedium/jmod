@@ -1,1 +1,1 @@
-../lib/sanity-1.0.0.js
+../lib/sanity-0.0.1.js
