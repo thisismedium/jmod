@@ -673,5 +673,8 @@
     }
 
 })();
-window.__dist_url__ = '/media/admin/js/dist'
+
+// These variables are loaded in with the distribution
+// (this file is copied per version)
+window.__dist_url__ = "http://js.coptix.com/dist";
 window.__dist_version__ = '1.0.0'; document.write('<script type="text/javascript"  src="' + window.__dist_url__ + '/dist.js"></script>');

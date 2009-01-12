@@ -1,1 +1,0 @@
-../lib/sanity-0.0.1.js
