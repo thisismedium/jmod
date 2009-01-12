@@ -35,7 +35,7 @@
 	for(var i=0; i<names.length; i++) {
 	    var file = names[i].substr(names[i].indexOf('.')+1) + '.js';
 	    Modules.request(names[i],
-			    dist_url + "/" + window.__dist_version__,
+			    dist_url + "/dist/" + window.__dist_version__,
 			    file);
 	}
     });
