@@ -1,0 +1,133 @@
+8
+
+dir
+6116
+http://jqueryjs.googlecode.com/svn/tags/1.3
+http://jqueryjs.googlecode.com/svn
+
+
+
+2009-01-13T17:50:31.120110Z
+6104
+jeresig
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c715fcbe-d12f-0410-84c4-316a508785bb
+
+build
+dir
+
+test
+dir
+
+GPL-LICENSE.txt
+file
+
+
+
+
+2009-01-16T01:28:45.000000Z
+2c1778696d3ba68569a0352e709ae6b7
+2006-08-21T19:36:44.284573Z
+220
+john
+
+version.txt
+file
+
+
+
+
+2009-01-16T01:28:45.000000Z
+84b17206d983a7430710b2a1f8ae52b8
+2009-01-13T17:50:31.120110Z
+6104
+jeresig
+
+reminder.txt
+file
+
+
+
+
+2009-01-16T01:28:45.000000Z
+49a4f95ae3615e6f3f213f1c0d4419d8
+2008-07-09T19:26:41.360584Z
+5776
+aflesler
+
+ChangeLog.txt
+file
+
+
+
+
+2009-01-16T01:28:45.000000Z
+1b8d67c2ce94e23cbbb4e88ec1bb8078
+2007-12-17T01:11:02.610121Z
+4195
+brandon.aaron
+
+src
+dir
+
+MIT-LICENSE.txt
+file
+
+
+
+
+2009-01-16T01:28:45.000000Z
+864fa6008a25be650e3e3429ffa8aac8
+2008-02-01T23:23:11.536176Z
+4586
+jeresig
+
+Makefile
+file
+
+
+
+
+2009-01-16T01:28:45.000000Z
+b714e33a677e9d1fec8d7bd4852e5ebe
+2009-01-11T16:17:20.469156Z
+6081
+jeresig
+
+README
+file
+
+
+
+
+2009-01-16T01:28:45.000000Z
+fada2b0dbda953c9f8583b314697a91e
+2006-08-16T21:20:38.959220Z
+208
+john
+
+build.xml
+file
+
+
+
+
+2009-01-16T01:28:45.000000Z
+ba3a64e4d3d29e5841198bcaf1ba1ee5
+2009-01-11T16:19:11.231051Z
+6082
+jeresig
+

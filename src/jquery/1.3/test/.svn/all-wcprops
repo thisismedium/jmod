@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/6104/tags/1.3/test
+END
+offset.html
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/6104/tags/1.3/test/offset.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/6104/tags/1.3/test/index.html
+END
+test.js
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/6104/tags/1.3/test/test.js
+END
+polluted.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/6104/tags/1.3/test/polluted.php
+END
