@@ -1,3 +1,3 @@
-[submodule "src/chain.js"]
-	path = src/chain.js
+[submodule "src/chain.js/proj"]
+	path = src/chain.js/proj
 	url = git://github.com/raid-ox/chain.js.git
