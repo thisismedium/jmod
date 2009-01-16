@@ -1,3 +1,2 @@
 dist/config
-dist/*/config.js
 dist/*/load.js
