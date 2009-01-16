@@ -1,0 +1,1 @@
+../../lib/jquery.effects.core-1.5.3.js

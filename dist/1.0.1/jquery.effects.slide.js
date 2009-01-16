@@ -1,0 +1,1 @@
+../../lib/jquery.effects.slide-1.5.3.js

@@ -1,0 +1,1 @@
+../../lib/jquery.ui.core-1.5.3.js
