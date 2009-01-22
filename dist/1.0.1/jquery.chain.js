@@ -1,1 +1,1 @@
-../../lib/jquery.chain-0.2.0.js
+../../lib/jquery.chain-0.2.1.js
