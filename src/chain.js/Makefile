@@ -1,5 +1,5 @@
 
-CHAIN_VERSION=0.2
+CHAIN_VERSION=0.2.1
 
 all: chain
 
