@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/6158/tags/1.3.1/test/unit
+END
+offset.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/6158/tags/1.3.1/test/unit/offset.js
+END
+core.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/6158/tags/1.3.1/test/unit/core.js
+END
+dimensions.js
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/6158/tags/1.3.1/test/unit/dimensions.js
+END
+data.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/6158/tags/1.3.1/test/unit/data.js
+END
+fx.js
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/6158/tags/1.3.1/test/unit/fx.js
+END
+selector.js
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/6158/tags/1.3.1/test/unit/selector.js
+END
+event.js
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/6158/tags/1.3.1/test/unit/event.js
+END
+ajax.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/6158/tags/1.3.1/test/unit/ajax.js
+END
