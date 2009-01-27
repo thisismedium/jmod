@@ -109,13 +109,13 @@ $.Chain =
 			
 			// Extract arguments
 			var args = Array.prototype.slice.call(arguments, 1);
-			
+
 			// Create Instance if it doesn't already exist
 			if(!instance)
 			{
 			  // Return immediately if destroyed is called before Instance is created
 				if(options == 'destroy') 
-					{return this;}
+				{return this;}
 				// Create Instance
 				instance = $.extend({element: this}, $.Chain.services[name]);
 				this.data('chain-'+name, instance);
@@ -128,7 +128,7 @@ $.Chain =
 			
 			// Check whether to execute a command
 			if(typeof options == 'string' && instance['$'+options])
-				{result = instance['$'+options].apply(instance, args);}
+			    {result = instance['$'+options].apply(instance, args);}
 			
 			// Otherwise try to execute default handler
 			else if(instance['handler'])
@@ -345,6 +345,7 @@ $.Chain =
 	
 })(jQuery);
 
+
 /* update.js */
 /**
  * Chain Update Service
@@ -520,13 +521,13 @@ $.Chain.service('chain', {
 		
 		// Empty element, if @item@ it will filled again later
 		this.anchor.empty();
-
+		
 		this.isActive = true;
 		this.element.update();
 		
 		return this.element;
 	},
-
+	
 	/**
 	 * Updater Handler.
 	 * If you pass an object to @chain@, it will treated as a updater object.
@@ -767,20 +768,20 @@ $.Chain.service('chain', {
 		
 		// Default Updater
 		if(res)
-	        {
-	                this.unbind('update');
+		{
+			this.unbind('update');
 			this.bind('update', function(event, data){
-			    var self = $(this);
+				var self = $(this);
 				// Iterate through data
 				// Find element with the same class as data property
 				// Insert data depending of elemen type
 				for(var i in data)
-				{
+				{	
 					if(typeof data[i] != 'function')
 					{
 						// This prevents selector to select inside nested chain-element
 						// Important to support recursion & nested element
-					        // NEED OPTIMIZATION
+						// NEED OPTIMIZATION
 					    self.find('> .'+i+', *:not(.chain-element) .'+i)
 							.each(function(){
 								var match = $(this);
@@ -815,7 +816,7 @@ $.Chain.service('chain', {
 									{match.attr('src', data[i]);}
 								else
 									{match.html(data[i]);}
-							});
+							});						
 					}
 				}
 			});
@@ -2202,6 +2203,7 @@ $.Chain.service('items', {
 	 */ 
 	$destroy: function()
 	{
+		console.debug('destroying');
 		this.empty();
 		return this.element;
 	}
@@ -2376,4 +2378,5 @@ $.Chain.extend('items', {
 	}
 });
 	
-})(jQuery);       });
+})(jQuery);
+       });
