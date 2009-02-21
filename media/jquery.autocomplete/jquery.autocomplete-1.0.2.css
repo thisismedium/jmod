@@ -34,8 +34,10 @@
 	overflow: hidden;
 }
 
+form input[type="text"].ac_loading,
+form input.ac_loading,
 .ac_loading {
-	background: white url('indicator.gif') right center no-repeat;
+	background: white url('indicator.gif') 90% center no-repeat;
 }
 
 .ac_odd {
