@@ -1,0 +1,1 @@
+../../lib/jquery.effects.clip-1.5.3.js

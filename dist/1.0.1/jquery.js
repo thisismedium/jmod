@@ -1,1 +1,1 @@
-../../lib/jquery-1.3.1.js
+../../lib/jquery-1.2.6.js
