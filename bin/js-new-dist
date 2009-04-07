@@ -1,0 +1,40 @@
+#! /bin/sh
+
+root=`pwd`
+version="$1"; shift;
+dir="dist"
+
+if [ -z "$version" ]; then
+    echo "Usage: js-new-dist <version>"
+    exit 1
+fi
+
+if [ -d "$dir/$version" ]; then
+    echo "distribution v$version already exists, bailing"
+    exit 2
+fi
+
+# Make the snapshot
+mkdir "$dir/$version"
+cd "$dir/$version"
+
+for f in `latest-versions ../../lib`; do
+    ln -s ../../lib/"$f" "${f%-*}.js"
+done
+
+for media_dir in `ls ../../media`; do
+    mkdir "$media_dir"
+    for f in `latest-versions ../../media/"$media_dir"`; do
+        path="../../media/$media_dir/$f"
+        if [ -f "$path" ]; then
+	        ext="${f##*.}"
+	        ln -s "../$path" "$media_dir/${f%-*}.$ext"
+        else
+            ln -s "../$path" "$media_dir/${f%-*}"
+        fi
+    done
+done
+
+cd "$root"
+js-localize-dist "$version"
+

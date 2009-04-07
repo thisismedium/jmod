@@ -1,0 +1,22 @@
+#! /usr/bin/perl
+
+$src=$ARGV[0];
+$tmpl=$ARGV[1];
+
+open(SRC, "< $src");
+open(TMPL, "< $tmpl");
+
+while(<TMPL>) {
+    if(/--SOURCE--/) {
+	    s/(.*)--SOURCE--(.*)//;
+	    print $1;
+	    while(<SRC>) { print; }
+	    print $2;
+    }
+    else {
+	    print;
+    }
+}
+
+close(SRC);
+close(TMPL);
