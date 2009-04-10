@@ -26,6 +26,6 @@ function echo_load_js() {
 
     echo "window.__dist_url__ = '$DIST_URL'"
     echo "window.__dist_version__ = '$version';"
-    echo_load_js modules.js
+    echo_load_js jmod.js
     echo_load_js dist.js    
 } > "$version_dir/load.js"
