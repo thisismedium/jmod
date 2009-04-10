@@ -36,5 +36,5 @@ for media_dir in `ls ../../media`; do
 done
 
 cd "$root"
-js-localize-dist "$version"
+bin/js-localize-dist "$version"
 
