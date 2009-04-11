@@ -7,7 +7,7 @@ module('lib.jquery',
            // fired before jquery is loaded. If that is the case, the
            // following code lets jQuery know that the document is
            // ready.
-           Modules.ready(function() {
+           jMod.ready(function() {
                jQuery.ready();
            });
 	       return jQuery.noConflict();
