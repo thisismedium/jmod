@@ -1,0 +1,59 @@
+#! /usr/bin/perl
+use lib "/home/james/projects/perl/site-packages";
+use Perl::Version;
+
+sub newer {
+    my($a, $b) = @_;
+    $a = Perl::Version->new($a);
+    $b = Perl::Version->new($b);
+    return $a->vcmp($b);
+}
+
+sub js_versioned_file {
+    my($name, $version) = @_;
+    if($name =~ /(.*)\.([^\.]*)/) {
+        return "$1-$version.$2";
+    }
+    else {
+        return "$name-$version";
+    }
+}
+
+if($#ARGV+1 != 1) {
+    die("Usage: latest-versions <src>");
+}
+
+$src=$ARGV[0];
+%libs = ();
+
+opendir(SRC, "$src");
+
+while($_ = readdir(SRC)) {
+    my $name = '';
+    my $version = '';
+
+    if(-d "$src/$_") {
+        if(/(.*)-(\d+\.\d+\.\d+)$/) {
+            $name = "$1";
+            $version = "$2";
+        }
+    }
+    else {
+        if(/(.*)-(\d+\.\d+\.\d+)\.(.*)$/) {
+            $name = "$1.$3";
+            $version = "$2";
+        }
+    }
+
+    if($version) {
+        if(!(exists $libs{$name}) || newer($version, $libs{$name})) {
+            $libs{$name} = $version;
+        }
+    }
+}
+
+closedir(SRC);
+
+while(($k, $v) = each(%libs)) {
+    print(js_versioned_file($k, $v) . "\n");
+}
