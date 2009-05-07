@@ -18,7 +18,7 @@ fi
 mkdir "$dir/$version"
 cd "$dir/$version"
 
-for f in `latest-versions ../../lib`; do
+for f in `$root/bin/latest-versions ../../lib`; do
     ln -s ../../lib/"$f" "${f%-*}.js"
 done
 
