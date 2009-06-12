@@ -1,1 +1,0 @@
-../../lib/jquery.ui.sortable-1.5.3.js

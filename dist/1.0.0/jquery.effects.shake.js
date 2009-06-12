@@ -1,1 +1,0 @@
-../../lib/jquery.effects.shake-1.5.3.js

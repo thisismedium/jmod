@@ -1,1 +1,0 @@
-../../lib/jquery.ui.slider-1.5.3.js

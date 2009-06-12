@@ -1,1 +1,0 @@
-../../lib/jpres.slider-1.0.0.js

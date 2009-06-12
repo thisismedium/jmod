@@ -1,1 +1,0 @@
-../../lib/jquery.bgiframe-2.1.1.js

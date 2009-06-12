@@ -1,1 +1,0 @@
-../../lib/jquery.effects.scale-1.5.3.js

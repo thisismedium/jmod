@@ -1,1 +1,0 @@
-../../lib/jquery.ui.dialog-1.5.3.js

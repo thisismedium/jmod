@@ -1,1 +1,0 @@
-../../lib/jquery.put_delete-1.0.0.js
