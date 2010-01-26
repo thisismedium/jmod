@@ -1,5 +1,5 @@
 
-JQUERY_VERSION=1.3.1
+JQUERY_VERSION=1.4.1
 
 all: jquery
 
