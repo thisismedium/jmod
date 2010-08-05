@@ -1,0 +1,41 @@
+jmod -- modules for javascript
+James Long 6/10/2009
+@version 1.0.4
+
+This library provides a pretty syntax for
+encapsulating javascript code and manages dependencies
+between libraries.
+
+It essentially makes it easier to write:
+
+(function($j) {
+  ...
+  window.foo.fizzle = ...
+})(jQuery);
+
+The above is not very readable.  It's also bulky to
+export symbols.  This library makes it easier to define
+the above module.  Here's how it would look:
+
+module('james.foo',
+       imports('lib.jquery'),
+       function($j) {
+           ...
+           this.fizzle = ...
+       });
+
+The first argument is the name of the module,
+the second is a list of imports, and the third
+is the code.  The list of imports is constructed
+with the IMPORTS command, which takes a list of
+module names.  Imported modules are passed as function
+arguments to this module.
+
+The module function is evaluated in the context
+of the module object, referred to by THIS.  To export
+functions and variables, simply add them to the THIS object.
+
+Modules are included only once, and in the right order to
+satify dependency requirements.  Circular dependencies are not
+supported.
+
